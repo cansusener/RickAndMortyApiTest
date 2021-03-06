@@ -19,10 +19,8 @@ public class ApiTesting extends BaseService {
 
         Assert.assertTrue(result.length > 0);    // eleman geliyor mu
 
-        // 0dan kucuk ıse asagıdakı kontrollere hıc girmiyor
+        // 0dan kucuk ıse asagıdakı kontrollere hıc gırmıyor
 
-
-        //her karakterde olan ortak alanlar
         for (Character c : result) {
             Assert.assertFalse(c.getName().isEmpty(), "Name boş geldi");
             Assert.assertFalse(c.getGender().isEmpty(), "Gender Boş geldi");
