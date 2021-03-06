@@ -28,5 +28,4 @@ public class ResponseSpec {
                 .expectStatusCode(HttpStatus.SC_NOT_FOUND)
                 .build();
     }
-
 }
